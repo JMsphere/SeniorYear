@@ -27,13 +27,13 @@
 		float: right;
 	}
 	#navfirst #menu li {
-		list-style: none;
 		text-transform: uppercase;
 		padding: 3px 5px;
 		float: left;
 		font-size: 25px;
 	}
 	#navfirst #menu li a{
+		list-style: none;
 		text-decoration: none;
 		color: black; 
 	}
