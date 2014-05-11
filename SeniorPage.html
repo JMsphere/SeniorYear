@@ -3,24 +3,95 @@
 <head>
 <meta charset="utf-8">
 <title>SeniorYear</title>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
 <style type="text/css">
-.SeniorYear{width:100%; height:100%; position:relative;  }
-img {position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; z-index: -9999;}
+	.SeniorYear{
+		width:100%; 
+		height:100%; 
+		position:relative;  
+	}
+	img {
+		position: fixed; width: 100%;
+		height: 100%; top: 0px; 
+		left: 0px; z-index: -9999;
+	}
+
+	#navfirst {
+		margin: 0px;
+		padding :0px 0px 40px;
+		position: relative;
+		z-index: 9999;
+	}
+	#navfirst #menu{
+		position: relative;
+		float: right;
+	}
+	#navfirst #menu li {
+		text-transform: uppercase;
+		padding: 3px 5px;
+		float: left;
+		font-size: 25px;
+	}
+	#navfirst #menu li a{
+		text-decoration: none;
+		color: black; 
+	}
+	canvas{
+		position: absolute;
+		margin-top: -50px;
+		
+	}
 </style>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
 </head>
 
 <body>
-<div id="SeniorYear" class="SeniorYear"></div>
-<img src = "images/bg.jpg"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.coffee.js"></script>
-<script type="text/javascript">
-$(function(){
-	$('#SeniorYear').css("margin-top", $(window).height());
-	$('#SeniorYear').coffee();
+	<div id="navfirst" class="cl-effect-2">
+		<ul id="menu">
+			<li>	<a href="index.html"><span data-hover="Home">Home</span></a>		</li>
+			<li>	<a href="#"><span data-hover="Member">Member</span></a>	</li>
+			<li>	<a href="SeniorPage.html"><span data-hover="MessageWall">MessageWall</span></a>	</li>
+			<li>	<a href="#"><span data-hover="StudyGroup">StudyGroup</span></a>	</li>
+			<li>	<a href="#"><span data-hover="About">About</span></a>		</li>
+		</ul>
+	</div>
+	<canvas id="myCanvas" height="50" width="150"></canvas>
+	<div id="SeniorYear" class="SeniorYear"></div>
+	<img src = "images/bg.jpg"/>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.coffee.js"></script>
+	<script type="text/javascript" src="js/bubble.js"></script>
+	<script type="text/javascript" defer>
+		var myName = "Organization Department";
 
-});
+		var red = [0, 100, 63];
+		var orange = [40, 100, 60];
+		var green = [75, 100, 40];
+		var blue = [196, 77, 55];
+		var purple = [280, 50, 60];
+		var letterColors = [red, orange, green, blue, purple];
 
-</script>
+		drawName(myName, letterColors);
+
+		if(10 < 3)
+		{
+		    bubbleShape = 'square';
+		}
+		else
+		{
+		    bubbleShape = 'circle';
+		}
+
+		bounceBubbles();
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$('#SeniorYear').css("margin-top", $(window).height());
+			$('#SeniorYear').coffee();
+
+		});
+
+	</script>
 </body>
 </html>
