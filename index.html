@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Test Page</title>
+		<meta charset="UTF-8" />
+        <meta name="description" content="Vertical Sliding Accordion with jQuery" />
+        <meta name="keywords" content="jquery, accordion, sliding, vertical, css3, hover, animation, slide, navigation" />
+		<meta name="author" content="Li" />
+		<!-- Style for the demo page -->
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<!-- Style of the component -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+		<!-- bubble -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&v2' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
+		<div class="container">
+			<div id="navfirst" class="cl-effect-2">
+				<ul id="menu">
+					<li>	<a href="#"><span data-hover="Home">Home</span></a>		</li>
+					<li>	<a href="#"><span data-hover="Member">Member</span></a>	</li>
+					<li>	<a href="#"><span data-hover="MessageWall">MessageWall</span></a>	</li>
+					<li>	<a href="#"><span data-hover="StudyGroup">StudyGroup</span></a>	</li>
+					<li>	<a href="#"><span data-hover="About">About</span></a>		</li>
+				</ul>
+			</div>
+			<canvas id="myCanvas" height="50" width="150"></canvas>
+			<div id="va-accordion" class="va-container">
+				<div class="va-nav">
+					<span class="va-nav-prev">Previous</span>
+					<span class="va-nav-next">Next</span>
+				</div>
+				<div class="va-wrapper">
+					<div class="va-slice va-slice-1">
+						<h3 class="va-title">Marketing</h3>
+						<div class="va-content">
+							<p>Henry Watson</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+							</nav>
+						</div>
+					</div>
+					<div class="va-slice va-slice-2">
+						<h3 class="va-title">Management</h3>
+						<div class="va-content">
+							<p>Keith Johnson</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+							</nav>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-3">
+						<h3 class="va-title">Visual Design</h3>
+						<div class="va-content">
+							<p>Andrew Alaniz</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+							</nav>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-4">
+						<h3 class="va-title">Quality Control</h3>
+						<div class="va-content">
+							<p>Ben Freeman</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+							</nav>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-5">
+						<h3 class="va-title">Customer Support</h3>
+						<div class="va-content">
+							<p>Maria Wales</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+						</div>	
+					</div>
+					<div class="va-slice va-slice-6">
+						<h3 class="va-title">Server Administration</h3>
+						<div class="va-content">
+							<p>Paul White</p>
+							<nav class="cl-effect-2">
+								<a href="SeniorPage.html"><span data-hover="About">About</span></a>
+								<a href="SeniorPage.html"><span data-hover="Portfolio">Portfolio</span></a>
+								<a href="SeniorPage.html"><span data-hover="Contact">Contact</span></a>
+							</nav>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.vaccordion.js"></script>
+		<script type="text/javascript" src="js/bubble.js"></script>
+		<script type="text/javascript" defer>
+			var myName = "Organization Department";
+
+			var red = [0, 100, 63];
+			var orange = [40, 100, 60];
+			var green = [75, 100, 40];
+			var blue = [196, 77, 55];
+			var purple = [280, 50, 60];
+			var letterColors = [red, orange, green, blue, purple];
+
+			drawName(myName, letterColors);
+
+			if(10 < 3)
+			{
+			    bubbleShape = 'square';
+			}
+			else
+			{
+			    bubbleShape = 'circle';
+			}
+
+			bounceBubbles();
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#va-accordion').vaccordion({
+					expandedHeight	: 450,
+					animSpeed		: 500,
+					animEasing		: 'easeInOutBack',
+					animOpacity		: 0.4
+				});
+			});
+		</script>
+    </body>
+</html>

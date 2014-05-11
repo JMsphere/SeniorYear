@@ -1,0 +1,43 @@
+@import url('reset.css');
+body{
+	background:#CBF3FB url(../images/pattern.png) repeat top left;
+	color:#fff;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size:12px;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+.container {
+	width:100%;
+	position:relative;
+	z-index:100;
+	margin: auto;
+}
+/*.content {
+	width:1000px;
+	margin:0 auto;
+}*/
+
+/*Nav of head*/
+#navfirst {
+	margin: 0px;
+	padding :0px 0px 40px;
+}
+#navfirst #menu{
+	position: relative;
+	float: right;
+}
+#navfirst #menu li {
+	text-transform: uppercase;
+	padding: 3px 5px;
+	float: left;
+	font-size: 25px;
+}
+
+canvas{
+	position: absolute;
+	margin-top: -50px;
+	
+}
