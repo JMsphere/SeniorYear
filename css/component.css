@@ -1,3 +1,10 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 .cl-effect-2{
 	margin: 15px 0px;
 	text-transform: uppercase;
